@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="TelaPrincipal" cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="1334.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teste.evoluun.resources.ControllerAplication">
+   <children>
+      <BorderPane layoutX="12.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="149.0" prefWidth="1311.0" scaleShape="false">
+         <center>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="539.0" scaleShape="false" text="Teste Evoluun - Consulta API IBGEI" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <Separator layoutX="448.0" layoutY="194.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="438.0">
+         <effect>
+            <DropShadow />
+         </effect></Separator>
+      <ComboBox fx:id="SelectorEstados" layoutX="95.0" layoutY="289.0" onAction="#BoxEstadosSelecionar" prefHeight="51.0" prefWidth="249.0" scaleShape="false">
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <ComboBox fx:id="SelectorMunicipios" layoutX="390.0" layoutY="289.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#BoxMunicipiosSelecionar" prefHeight="51.0" prefWidth="404.0" scaleShape="false">
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <Label layoutX="95.0" layoutY="246.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="137.0" scaleShape="false" text="Estados : ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="246.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="175.0" scaleShape="false" text="Municípios : ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnGerarCsv" layoutX="941.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BtnGerarCsvEstadosClick" prefHeight="51.0" prefWidth="231.0" scaleShape="false" text=".Csv Estados">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="BtnGerarCsvMunicipios" layoutX="941.0" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BtnGerarCsvMunicipiosClick" prefHeight="51.0" prefWidth="231.0" scaleShape="false" text=".Csv Municípios">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
